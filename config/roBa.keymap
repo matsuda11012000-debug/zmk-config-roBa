@@ -126,7 +126,7 @@
             bindings = <
 &trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT))  &trans                              &trans         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
 &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END  &trans      &trans         &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&kp HOME  &kp HOME                &kp END         &kp END            &trans   &trans      &trans         &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&kp HOME  &kp LG(LS(LEFT))        &kp LG(LS(S))   &kp LG(LS(RIGHT))  &trans   &trans      &trans         &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
 &trans    &trans                  &trans          &trans             &trans   &trans      &kp BACKSPACE  &kp LA(ENTER)                                            &kp PERIOD
             >;
 
@@ -135,10 +135,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &kp LA(HOME)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans    &trans    &trans    &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &kp F5
+&trans  &trans    &trans    &trans    &trans  &trans      &trans  &trans  &trans    &trans    &trans    &kp LA(HOME)
+&trans  &trans    &trans    &trans    &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
