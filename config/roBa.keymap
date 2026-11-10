@@ -41,7 +41,7 @@
 
         layer4_ESC {
             bindings = <&lt 4 ESC>;
-            key-positions = <39 38>;
+            key-positions = <40 39>;
         };
 
         tab {
@@ -92,7 +92,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E     &kp R        &kp T                                                            &kp Y        &kp U  &lt 3 I    &kp O    &kp P
-&kp A             &kp S         &kp D     &kp F        &kp G                                &kp LEFT                    &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp A             &kp S         &kp D     &kp F        &kp G                                &msc SCRL_UP  &kp LEFT                    &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C     &kp V        &kp B      &kp LC(KP_PLUS)           &kp RIGHT                   &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &mt LCTRL ESCAPE  &kp LEFT_WIN  &kp LALT  &lt 4 GRAVE  &lt 3 TAB  &lt_to_layer_0 2 SPACE    &lt_to_layer_0 3 BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
@@ -103,7 +103,7 @@
         layer_1 {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5                    &kp NUMBER_6  &kp F7  &kp F8  &kp F9  &kp LA(LC(DELETE))
-&trans        &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                  &trans  &trans        &kp F4  &kp F5  &kp F6  &kp LS(LC(ESCAPE))
+&trans        &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                  &trans  &trans  &trans        &kp F4  &kp F5  &kp F6  &kp LS(LC(ESCAPE))
 &trans        &kp UNDERSCORE  &trans            &trans             &trans        &trans    &trans  &trans        &kp F1  &kp F2  &kp F3  &kp LC(LA(INSERT))
 &trans        &trans          &trans            &trans             &trans        &trans    &trans  &trans                                &trans
             >;
@@ -114,7 +114,7 @@
         layer_2 {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp POUND          &kp DOLLAR  &kp PERCENT                           &kp CARET      &kp AMPERSAND      &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET
-&kp SLASH        &kp TILDE          &kp DOUBLE_QUOTES  &kp SQT     &kp SEMI                     &trans   &kp EXCL       &kp AT             &kp RIGHT_BRACKET      &kp BACKSLASH         &kp EQUAL
+&kp SLASH        &kp TILDE          &kp DOUBLE_QUOTES  &kp SQT     &kp SEMI                     &trans  &trans   &kp EXCL       &kp AT             &kp RIGHT_BRACKET      &kp BACKSLASH         &kp EQUAL
 &kp F1           &kp F2             &kp F3             &kp F4      &kp APOSTROPHE  &kp EQUAL    &kp F12  &kp LS(SLASH)  &kp RIGHT_BRACKET  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)     &kp LS(INTERNATIONAL_1)
 &trans           &trans             &trans             &trans      &trans          &trans       &trans   &trans                                                                         &kp PIPE
             >;
@@ -125,7 +125,7 @@
         layer_3 {
             bindings = <
 &trans     &kp LG(LC(LEFT))  &kp UP_ARROW    &kp LG(LC(RIGHT))        &trans                            &trans         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&kp HOME   &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT                &kp END            &trans         &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+&kp HOME   &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT                &kp END            &trans  &trans         &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
 &kp LC(Z)  &kp LS(LG(LEFT))  &kp LG(LS(S))   &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans         &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
 &trans     &trans            &trans          &trans                   &trans   &trans    &kp BACKSPACE  &kp LA(ENTER)                                            &trans
             >;
@@ -136,7 +136,7 @@
         layer_4 {
             bindings = <
 &tog APPLE  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans      &trans  &trans  &trans  &trans            &trans       &trans        &trans        &trans        &trans        &trans
+&trans      &trans  &trans  &trans  &trans            &trans  &trans       &trans        &trans        &trans        &trans        &trans
 &trans      &trans  &trans  &trans  &trans  &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans      &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                  &bt BT_CLR_ALL
             >;
@@ -147,7 +147,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &kp F5
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &kp F5
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &kp LA(HOME)
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &kp LA(HOME)
             >;
@@ -158,7 +158,7 @@
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
@@ -169,7 +169,7 @@
         APPLE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &lt 4 LC(SPACE)  &trans  &trans    &trans  &trans                                &trans
             >;
